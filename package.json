@@ -1,0 +1,17 @@
+{
+  "name": "psycho-voecklabruck",
+  "version": "1.0.0",
+  "description": "Landingpage for psycho-voecklabruck",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w",
+    "dev" : "parcel index.html",
+    "build" : "parcel build index.html"
+  },
+  "author": "Herbert Knaf",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.49.9"
+  }
+}
