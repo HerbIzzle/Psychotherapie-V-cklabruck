@@ -125,22 +125,24 @@ body {
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 30rem 0;
   margin-top: -20vh;
 }
 
 .section-features {
-  padding: 15rem 0;
+  position: relative;
+  z-index: 2;
+  padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(6, 88, 117, 0.2), rgba(0, 18, 33, 0.2)), url(/img/feature-box-section-2.jpg);
-  margin-top: -20vh;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  margin-top: -30vh;
   background-size: cover;
   background-position: top;
-  position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
