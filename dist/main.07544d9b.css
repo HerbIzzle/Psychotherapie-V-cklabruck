@@ -135,10 +135,10 @@ body {
 }
 
 .section-features {
-  padding: 20rem 0;
+  padding: 15rem 0;
   background-image: linear-gradient(to right bottom, rgba(6, 88, 117, 0.2), rgba(0, 18, 33, 0.2)), url(/feature-box-section-2.8454a99d.jpg);
+  margin-top: -20vh;
   background-size: cover;
-  margin-top: -10rem;
   background-position: top;
   position: center;
   background-attachment: fixed;
@@ -154,20 +154,21 @@ body {
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   transition: transform .3s;*/
   font-size: 1.5rem;
-  padding: 2.5rem;
+  padding: 3rem;
   text-align: center;
   transition: transform 0.3s;
   background: rgba(247, 247, 247, 0.7);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10.5px);
   -webkit-backdrop-filter: blur(10.5px);
-  border-radius: 10px;
+  border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  min-height: 25rem;
+  min-height: 33rem;
 }
 .feature-box__icon {
   font-size: 6rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
   display: inline-block;
   background-image: linear-gradient(to right, #065875, #001221);
   -webkit-background-clip: text;
