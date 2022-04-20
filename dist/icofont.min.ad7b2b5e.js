@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/icofont/icofont.min.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\asus\\Desktop\\Psychotherapie Vöcklabruck\\img\\feature-box-section-2.jpg":[["feature-box-section-2.8454a99d.jpg","img/feature-box-section-2.jpg"],"img/feature-box-section-2.jpg"],"C:\\Users\\asus\\Desktop\\Psychotherapie Vöcklabruck\\img\\4824.jpg":[["4824.6a81f0cb.jpg","img/4824.jpg"],"img/4824.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./fonts\\icofont.woff2":[["icofont.14b23df0.woff2","css/icofont/fonts/icofont.woff2"],"css/icofont/fonts/icofont.woff2"],"./fonts\\icofont.woff":[["icofont.ef4164bd.woff","css/icofont/fonts/icofont.woff"],"css/icofont/fonts/icofont.woff"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -394,4 +394,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/main.07544d9b.js.map
+//# sourceMappingURL=/icofont.min.ad7b2b5e.js.map
