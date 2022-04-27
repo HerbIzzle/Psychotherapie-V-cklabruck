@@ -380,6 +380,7 @@ body {
 
 .composition {
   position: relative;
+  z-index: 9999;
 }
 .composition__photo {
   border-radius: 8%;
