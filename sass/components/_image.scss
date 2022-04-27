@@ -1,23 +1,23 @@
-.composition{
+.composition {
 
   position: relative;
   z-index: 9999;
 
-  &__photo{
+  &__photo {
 
-    border-radius: 8% ;
+    border-radius: 8%;
     width: 80%;
     margin-left: 4.5rem;
     opacity: 95%;
     outline-offset: 2rem;
     transition: all .5s;
-    box-shadow: 0 1.5rem 4rem rgb($color-black, .4);
+    //box-shadow: 0 1.5rem 4rem rgb($color-black, .4);
     // border: 4px solid $color-primary;
 
-    &:hover{
+    //  &:hover{
 
 
-      box-shadow:
+    /*  box-shadow:
               4px 4px #373737,
               5px 5px #373737,
               6px 6px #373737,
@@ -28,11 +28,11 @@
       transform: translateX(-3px);
       transition: .5s ease;
 
-/*
+
       outline: 1.5rem solid $color-primary;
       transform: scale(1.05) translateY(-.5rem);
       box-shadow: 0 2.5rem 4rem rgb($color-black, .5);
-*/
+
     }
 
   }
@@ -41,5 +41,6 @@
     //  border : 5px solid red;
   }
 
-
+*/
+  }
 }

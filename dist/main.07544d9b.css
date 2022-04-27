@@ -389,19 +389,33 @@ body {
   opacity: 95%;
   outline-offset: 2rem;
   transition: all 0.5s;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-}
-.composition__photo:hover {
-  box-shadow: 4px 4px #373737, 5px 5px #373737, 6px 6px #373737, 7px 7px #373737, 8px 8px #373737, 9px 9px #373737;
-  -webkit-transform: translateX(-3px);
-  transform: translateX(-3px);
-  transition: 0.5s ease;
-  /*
+  /*  box-shadow:
+                4px 4px #373737,
+                5px 5px #373737,
+                6px 6px #373737,
+                7px 7px #373737,
+                8px 8px #373737,
+                9px 9px #373737;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+        transition: .5s ease;
+
+
         outline: 1.5rem solid $color-primary;
         transform: scale(1.05) translateY(-.5rem);
         box-shadow: 0 2.5rem 4rem rgb($color-black, .5);
+
+      }
+
+    }
+
+    &:hover &__photo:not(hover){
+      //  border : 5px solid red;
+    }
+
   */
 }
+
 .card {
   position: relative;
   perspective: 150rem;
