@@ -224,7 +224,17 @@ body {
 .section-about-list .portrait__img {
   display: block;
   width: 50%;
+  border-radius: 2%;
   margin: auto;
+  margin-left: 6rem;
+  transition: all 0.5s;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+.section-about-list .portrait__img:hover {
+  box-shadow: 4px 4px #373737, 5px 5px #373737, 6px 6px #373737, 7px 7px #373737, 8px 8px #373737, 9px 9px #373737;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  transition: 0.5s ease;
 }
 .section-about-list .about-list__content {
   display: block;
