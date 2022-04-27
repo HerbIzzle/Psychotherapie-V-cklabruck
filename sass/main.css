@@ -382,6 +382,7 @@ body {
   position: relative;
 }
 .composition__photo {
+  display: block;
   border-radius: 8%;
   width: 80%;
   margin-left: 4.5rem;
