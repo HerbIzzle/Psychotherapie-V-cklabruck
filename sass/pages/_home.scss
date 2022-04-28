@@ -1,30 +1,37 @@
 .section-about {
 
   background-color: $color-grey-light-1;
-  padding: 15rem 0 25rem 0;
+  padding: 15rem 0 10rem 0;
   margin-top: -13vh;
   transform: skewY(-7deg);
 
   & > * {
     transform: skewY(7deg);
   }
-  // clip-path: polygon(0 10%, 100% 0 , 100% 80%, 0 100%);
+  //clip-path: polygon(0 10%, 100% 0 , 100% 80%, 0 100%);
 }
 
 .section-features {
   //background-color: $color-grey-light-1;
-  padding: 15rem 0 25rem 0;
+  padding: 10rem 0 20rem 0;
   background-image: linear-gradient(
                   to right bottom,
-                  rgba($color-primary-light, 0.2),
-                  rgba($color-primary-dark, 0.2)),
-  url(/img/feature-box-section-2.jpg);
-  margin-top: -10rem;
+                  rgba($color-primary-light, .2),
+                  rgba($color-primary-dark, .2));
+  margin-top: 0rem;
+
+  //background-attachment: fixed;
+  //background-size: cover;
+  //background-position: top;
+  //background-repeat: no-repeat;
+
+  //clip-path: polygon(0 20%, 100% 0 , 100% 80%, 0 100%);
+
 
   transform: skewY(-7deg);
   & > * {
-    transform: skewY(7deg);
-  }
+   transform: skewY(7deg);
+ }
 
 }
 

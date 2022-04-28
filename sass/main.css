@@ -151,7 +151,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 15rem 0 25rem 0;
+  padding: 15rem 0 10rem 0;
   margin-top: -13vh;
   transform: skewY(-7deg);
 }
@@ -160,9 +160,9 @@ body {
 }
 
 .section-features {
-  padding: 15rem 0 25rem 0;
-  background-image: linear-gradient(to right bottom, rgba(6, 88, 117, 0.2), rgba(0, 18, 33, 0.2)), url(/img/feature-box-section-2.jpg);
-  margin-top: -10rem;
+  padding: 10rem 0 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(6, 88, 117, 0.2), rgba(0, 18, 33, 0.2));
+  margin-top: 0rem;
   transform: skewY(-7deg);
 }
 .section-features > * {
@@ -340,13 +340,15 @@ body {
 .btn-gray {
   background-color: #fff;
   color: #000;
+  border: solid black 1px;
 }
 .btn-gray:hover {
   background-color: #03354B;
   color: #fff;
+  border: none;
 }
 .btn-popup {
-  width: 60% !important;
+  width: max-content !important;
   display: block !important;
   margin: 0 auto !important;
   margin-top: 3rem !important;
@@ -396,7 +398,6 @@ body {
   border-radius: 8%;
   width: 80%;
   margin-left: 4.5rem;
-  opacity: 95%;
   outline-offset: 2rem;
   transition: all 0.5s;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -516,7 +517,7 @@ body {
 }
 .popup__img {
   display: block;
-  width: 100%;
+  width: 80%;
   margin: auto;
 }
 .popup__text {
@@ -559,11 +560,11 @@ body {
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(6, 88, 117, 0.8), rgba(0, 18, 33, 0.8)), url(/img/header-big-foto.jpg);
-  background-size: cover;
-  background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   position: relative;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .header__text-box {
@@ -643,16 +644,17 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -25%;
   z-index: 1500;
   opacity: 0;
+  visibility: hidden;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .navigation__list {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 75%;
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
@@ -688,6 +690,7 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%;
+  visibility: visible;
 }
 .navigation__icon {
   position: relative;

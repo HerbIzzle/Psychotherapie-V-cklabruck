@@ -46,6 +46,7 @@
   &-gray{
     background-color: $color-button-white;
     color: $color-black;
+  border: solid black 1px;
 
   //  &::after{
    //   background-color: $color-primary;
@@ -55,11 +56,12 @@
     &:hover{
       background-color: $color-primary;
       color: $color-button-white;
+      border: none;
     }
   }
 
 &-popup{
-  width: 60% !important;
+  width: max-content !important;
   display: block !important;
   margin: 0 auto !important;
   margin-top: 3rem !important;

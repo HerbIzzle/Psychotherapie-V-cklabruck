@@ -6,12 +6,12 @@
                   rgba($color-primary-dark, .8)
   ),url(/img/header-big-foto.jpg);
   //filter: grayscale(100%);
-  background-size: cover;
-  background-position: top;
+
   clip-path: polygon(0 0, 100% 0 , 100% 80%, 0 100%);
   position: relative;
   background-attachment: fixed;
-  //background-position: center;
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
 
 
