@@ -30,6 +30,11 @@
     -webkit-background-clip: text;
     color: transparent;
 
+    @include respond(tab-port) {
+      font-size: 9rem;
+      word-wrap: inherit;
+    }
+
   }
 
   &:hover {

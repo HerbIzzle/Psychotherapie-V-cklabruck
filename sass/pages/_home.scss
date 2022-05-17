@@ -8,12 +8,13 @@
   & > * {
     transform: skewY(7deg);
   }
+
   //clip-path: polygon(0 10%, 100% 0 , 100% 80%, 0 100%);
 }
 
 .section-features {
   //background-color: $color-grey-light-1;
-  padding: 10rem 0 20rem 0;
+  padding: 15rem 0 25rem 0;
   background-image: linear-gradient(
                   to right bottom,
                   rgba($color-primary-light, .2),
@@ -29,9 +30,10 @@
 
 
   transform: skewY(-7deg);
+
   & > * {
-   transform: skewY(7deg);
- }
+    transform: skewY(7deg);
+  }
 
 }
 
@@ -40,13 +42,14 @@
   margin-top: -10rem;
   padding: 15rem 0 15rem 0;
 
- // clip-path: polygon(0 20%, 100% 0 , 100% 80%, 0 100%);
+  // clip-path: polygon(0 20%, 100% 0 , 100% 80%, 0 100%);
   transform: skewY(-7deg);
 
   & > * {
     transform: skewY(7deg);
   }
 }
+
 .method-alt {
   // border: 1px red solid;
   background-color: $color-grey-light-1;
@@ -66,6 +69,11 @@
       margin-top: -8rem;
       border-radius: 100%;
       width: 35%;
+
+      @include respond(tab-port) {
+        width: 80%;
+      }
+
     }
   }
 
@@ -85,6 +93,7 @@
   //margin-top: -10rem;
 
   transform: skewY(-7deg);
+
   & > * {
     transform: skewY(7deg);
   }
@@ -122,16 +131,19 @@
       transition: all .5s;
       box-shadow: 0 1.5rem 4rem rgb($color-black, .4);
 
-      &:hover{
+      @include respond(tab-port) {
+       margin: auto;
+      }
+
+      &:hover {
 
 
-        box-shadow:
-                4px 4px #373737,
-                5px 5px #373737,
-                6px 6px #373737,
-                7px 7px #373737,
-                8px 8px #373737,
-                9px 9px #373737;
+        box-shadow: 4px 4px #373737,
+        5px 5px #373737,
+        6px 6px #373737,
+        7px 7px #373737,
+        8px 8px #373737,
+        9px 9px #373737;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
         transition: .5s ease;
@@ -150,27 +162,30 @@
   }
 
 
-  .about-list__content{
+  .about-list__content {
     display: block;
     margin-left: 10rem;
+
+    @include respond(tab-port) {
+      margin: auto;
+    }
   }
 }
 
 .section-contact {
-  padding: 30rem 0 20rem 0;
+  padding: 20rem 0 20rem 0;
   background-color: $color-grey-light-1;
-  margin-top: -15rem;
+  margin-top: -5rem;
 
 
-  clip-path: polygon(0 20%, 100% 0 , 100% 100%, 0 100%);
+  //clip-path: polygon(0 5vh, 100% 0 , 100% 100%, 0 100%);
 
- // transform: skewY(-7deg);
+  transform: skewY(-7deg);
 
- // & > * {
- //   transform: skewY(7deg);
- // }
+  & > * {
+    transform: skewY(7deg);
+  }
 }
-
 
 
 /*.section-method {

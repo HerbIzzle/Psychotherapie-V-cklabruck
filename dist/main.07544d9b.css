@@ -9,12 +9,45 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  /* @include respond(phone){
+    font-size: 30%;
+   }*/
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 65.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
 }
-
+@media only screen and (max-width: 75em) {
+  body {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body {
+    padding: 0;
+  }
+}
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -57,13 +90,19 @@ body {
   /*font-size: 16px;*/
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
 }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
+  /*
+        display: block;
+      letter-spacing: 3rem;
+      font-size: 6rem;
+      font-weight: 500;
+
+  */
 }
 .heading-primary--main {
   display: block;
@@ -71,33 +110,48 @@ body {
   font-size: 5rem;
   font-weight: 700;
   animation: moveInLeft 1s ease-out;
-  /*
-  animation-name:  moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-
-
-    animation-iteration-count: 5;
-    animation-delay: 3s;
-    */
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--main {
+    letter-spacing: 0;
+    font-size: 5rem;
+    margin-top: 5rem;
+  }
 }
 .heading-primary--sub {
   display: block;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1.34rem;
   animation: moveInRight 1s ease-out;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: 1rem;
+    font-size: 2rem;
+  }
 }
 
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 400;
+  letter-spacing: 0.2rem;
   background-image: linear-gradient(to right, #065875, #001221);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: 0.2rem;
   transition: all 0.2s;
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 3.2rem;
+    padding: 0 2rem;
+  }
 }
 
 .heading-tertiary {
@@ -105,9 +159,19 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 56.25em) {
+  .heading-tertiary {
+    font-size: 3rem;
+  }
+}
 
 .paragraph {
   font-size: 1.6rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .paragraph {
+    font-size: 2rem;
+  }
 }
 .paragraph:not(last-chid) {
   margin-bottom: 6rem;
@@ -149,6 +213,10 @@ body {
   margin-top: 9rem;
 }
 
+.u-margin-left {
+  margin-left: 8rem;
+}
+
 .section-about {
   background-color: #f7f7f7;
   padding: 15rem 0 10rem 0;
@@ -160,7 +228,7 @@ body {
 }
 
 .section-features {
-  padding: 10rem 0 20rem 0;
+  padding: 15rem 0 25rem 0;
   background-image: linear-gradient(to right bottom, rgba(6, 88, 117, 0.2), rgba(0, 18, 33, 0.2));
   margin-top: 0rem;
   transform: skewY(-7deg);
@@ -193,6 +261,11 @@ body {
   margin-top: -8rem;
   border-radius: 100%;
   width: 35%;
+}
+@media only screen and (max-width: 56.25em) {
+  .method-alt__photo .img {
+    width: 80%;
+  }
 }
 .method-alt__text {
   color: black;
@@ -230,6 +303,11 @@ body {
   transition: all 0.5s;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
+@media only screen and (max-width: 56.25em) {
+  .section-about-list .portrait__img {
+    margin: auto;
+  }
+}
 .section-about-list .portrait__img:hover {
   box-shadow: 4px 4px #373737, 5px 5px #373737, 6px 6px #373737, 7px 7px #373737, 8px 8px #373737, 9px 9px #373737;
   -webkit-transform: translateX(-3px);
@@ -240,12 +318,20 @@ body {
   display: block;
   margin-left: 10rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .section-about-list .about-list__content {
+    margin: auto;
+  }
+}
 
 .section-contact {
-  padding: 30rem 0 20rem 0;
+  padding: 20rem 0 20rem 0;
   background-color: #f7f7f7;
-  margin-top: -15rem;
-  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -5rem;
+  transform: skewY(-7deg);
+}
+.section-contact > * {
+  transform: skewY(7deg);
 }
 
 /*.section-method {
@@ -301,6 +387,12 @@ body {
   background-image: linear-gradient(to right, #065875, #001221);
   -webkit-background-clip: text;
   color: transparent;
+}
+@media only screen and (max-width: 56.25em) {
+  .feature-box__icon {
+    font-size: 9rem;
+    word-wrap: inherit;
+  }
 }
 .feature-box:hover {
   transform: translateY(-1.5rem) scale(1.03);
@@ -441,17 +533,82 @@ body {
   background-color: green;
 }
 
-.contact-form {
-  margin-left: 5rem;
-  font-size: 1.6rem;
-  line-height: 2;
+.contact-form__group:not(:last-child) {
+  margin-bottom: 2rem;
 }
-.contact-form__name, .contact-form__mail-adress, .contact-form__phone, .contact-form__message, .contact-form__button {
+@media only screen and (max-width: 56.25em) {
+  .contact-form {
+    margin: auto;
+  }
+}
+.contact-form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: white;
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 56.25em) {
+  .contact-form__input {
+    width: 100%;
+  }
+}
+.contact-form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #03354B;
+}
+.contact-form__input:focus:invalid {
+  border-bottom: 3px solid #03354B;
+}
+.contact-form__input::-webkit-input-placeholder {
+  color: #000;
+  opacity: 0.6;
+}
+.contact-form__label {
   font-size: 1.6rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+.contact-form__input:placeholder-shown + .contact-form__label {
+  opacity: 1;
+  color: black;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+.contact-form__button {
+  width: 100%;
+  background-color: #03354B;
+  color: white;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  border: none;
+}
+.contact-form__button:hover {
+  opacity: 0.8;
 }
 
 .contact-text {
   padding-left: 10rem;
+}
+@media only screen and (max-width: 75em) {
+  .contact-text {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+  }
 }
 .contact-text__paragraph {
   font-size: 1.6rem;
@@ -459,7 +616,52 @@ body {
 .contact-text__hr {
   width: 60%;
 }
+@media only screen and (max-width: 75em) {
+  .contact-text__hr {
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
+}
 
+/*.contact{
+}
+
+.contact-form{
+ // background-color: red;
+  margin-left: 5rem;
+  font-size: $default-font-size;
+  line-height: 2;
+
+
+  &__name, &__mail-adress,
+  &__phone, &__message, &__button {
+    font-size: $default-font-size;
+  }
+}
+
+
+
+.contact-text{
+  padding-left: 10rem;
+ // border: dotted 1px $color-primary;
+
+&__paragraph {
+  //margin-right: 5rem;
+  font-size: $default-font-size;
+  //margin-right: 4rem;
+  // padding-right: rem;
+
+  &:not(last-chid) {
+   // margin-bottom: 6rem;
+  }
+}
+
+  &__hr{
+    width: 60%;
+  }
+}
+
+*/
 .popup {
   height: 100vh;
   width: 100%;
@@ -560,19 +762,30 @@ body {
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(6, 88, 117, 0.8), rgba(0, 18, 33, 0.8)), url(/header-big-foto.da5aada4.jpg);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
   background-attachment: fixed;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 56.25em) {
+  .header {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+}
 .header__text-box {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+.header__impressum {
+  display: block;
+  width: 100%;
+  height: 10rem;
+  background-color: #333;
 }
 
 .row {
@@ -582,6 +795,20 @@ body {
 }
 .row:not(:last-child) {
   margin-bottom: 8rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+    padding: 0 6rem;
+  }
+  .row p {
+    font-size: 2.5rem;
+  }
 }
 .row::after {
   content: "";
@@ -593,6 +820,17 @@ body {
 }
 .row [class^=col-]:not(:last-child) {
   margin-right: 4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .row [class^=col-]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .row [class^=col-] {
+    width: 100% !important;
+  }
 }
 .row .col-1-of-2 {
   width: calc((100% - 4rem) / 2);
@@ -672,7 +910,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-  background-size: 220%;
+  background-size: 225%;
   transition: all 0.4s;
 }
 .navigation__link:link span, .navigation__link:visited span {
@@ -737,6 +975,13 @@ body {
   padding: 10rem 0;
   font-size: 1.4rem;
   color: #f7f7f7;
+  margin-top: -12vh;
+  position: relative;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer {
+    padding: 8rem 0;
+  }
 }
 .footer__logo-box {
   text-align: center;
@@ -750,6 +995,13 @@ body {
   border-top: 1px solid #777;
   padding-top: 2rem;
   display: inline-block;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer__navigation {
+    width: 100%;
+    text-align: center;
+    border-top: none;
+  }
 }
 .footer__list {
   list-style: none;
@@ -774,6 +1026,14 @@ body {
   width: 40%;
   float: right;
   color: white;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer__copyright {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-top: -3vh;
+  }
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

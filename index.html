@@ -27,12 +27,12 @@
 
     <nav class="navigation__nav">
         <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Startseite</a></li>
-            <li class="navigation__item"><a href="#navi_2" class="navigation__link"><span>02</span>Meine Aufgabe</a>
+            <li class="navigation__item"><a href="#" class="navigation__link">Startseite</a></li>
+            <li class="navigation__item"><a href="#navi_2" class="navigation__link">Meine Aufgabe</a>
             </li>
-            <li class="navigation__item"><a href="#navi_3" class="navigation__link"><span>03</span>Zur Methode</a></li>
-            <li class="navigation__item"><a href="#navi_4" class="navigation__link"><span>04</span>Über Mich</a></li>
-            <li class="navigation__item"><a href="#navi_5" class="navigation__link"><span>05</span>Kontakt</a></li>
+            <li class="navigation__item"><a href="#navi_3" class="navigation__link">Zur Methode</a></li>
+            <li class="navigation__item"><a href="#navi_4" class="navigation__link">Über Mich</a></li>
+            <li class="navigation__item"><a href="#navi_5" class="navigation__link">Kontakt</a></li>
         </ul>
     </nav>
 </div>
@@ -73,7 +73,7 @@
             </div>
 
             <div class="col-1-of-2 u-row-margin-left-small">
-                <h3 class="heading-tertiary u-margin-bottom-small" >
+                <h3 class="heading-tertiary u-margin-bottom-small">
                     Meine Aufgabe
                 </h3>
                 <p class="paragraph">
@@ -253,18 +253,19 @@
         <div class="contact" id="contact">
             <div class="row">
                 <div class="col-1-of-2">
-                    <div class="contact-form">
-                        <label for="" class="contact-form__name">Name (Pflichtfeld)</label><br>
-                        <input type="text" class="contact-form__name" size="30" required><br>
-                        <label for="" class="contact-form__mail-adress">E-Mail-Adresse (Pflichtfeld)</label><br>
-                        <input type="text" class="contact-form__mail-adress" size="30" required><br>
-                        <label for="" class="contact-form__phone">Telefonnummer</label><br>
-                        <input type="text" class="contact-form__phone" size="30"><br>
-                        <label for="" class="contact-form__message">Nachricht</label><br>
-                        <textarea name="" id="" cols="50" rows="10" class="contact-form__message"></textarea>
-                        <button class="contact-form__button" onclick="sendInfo()">Absenden</button>
-                    </div>
+                    <div class="contact-form u-margin-left">
 
+                        <input type="text" id="name" class="contact-form__input" placeholder="Name (Pflichtfeld)" required><br>
+
+                        <input type="text" id="email" class="contact-form__input" placeholder="E-Mail_Adresse (Pflichtfeld)"
+                               required><br>
+                        <input type="text" id="tel" class="contact-form__input" placeholder="Telefonnummer"><br>
+
+                        <textarea name="" id="msg" cols="30" rows="10" class="contact-form__input"
+                                  placeholder="Ihre Nachricht"></textarea>
+
+                        <button class="contact-form__button">Absenden</button>
+                    </div>
 
                 </div>
 
@@ -283,6 +284,8 @@
 
 
 </main>
+
+
 <footer class="footer">
     <div class="row">
         <div class="col-1-of-2">
@@ -290,14 +293,15 @@
                 <ul class="footer__list">
 
 
-                    <li class="footer__item"><a href="#" class="footer__link">Datenschutz</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Impressum</a></li>
+                    <li class="footer__item"><a href="/impressum.html" class="footer__link">Datenschutz & Impressum</a>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="col-1-of-2">
             <p class="footer__copyright">
-                Copyright &copy; Daniela Pohn
+                Copyright &copy;
+                <span id="cdate"></span> Daniela Pohn
             </p>
         </div>
     </div>
@@ -506,6 +510,9 @@
 <script>document.querySelector('.navigation').addEventListener('click', function (e) {
     e.target.closest('.navigation__nav') ? document.getElementById('navi-toggle').checked = false : '';
 });</script>
+
+<script>document.getElementById("cdate").textContent = (new Date().getFullYear());</script>
+
 
 <script type="module">
     // Import the functions you need from the SDKs you need
