@@ -56,16 +56,24 @@
     &:hover{
       background-color: $color-primary;
       color: $color-button-white;
-      border: none;
+      border: solid $color-primary 1px;
     }
   }
 
-&-popup{
-  width: max-content !important;
-  display: block !important;
-  margin: 0 auto !important;
-  margin-top: 3rem !important;
-}
+  &-popup{
+    width: max-content !important;
+    display: block !important;
+    margin: 0 auto !important;
+    margin-top: 3rem !important;
+
+    &:hover{
+      border: solid $color-primary 1px;
+    }
+
+    &::after{
+      content: none !important;
+    }
+  }
 
   &::after{
     content: "" ;
