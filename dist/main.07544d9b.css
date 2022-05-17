@@ -144,12 +144,12 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .heading-secondary {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .heading-secondary {
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     padding: 0 2rem;
   }
 }
@@ -162,6 +162,17 @@ body {
 @media only screen and (max-width: 56.25em) {
   .heading-tertiary {
     font-size: 3rem;
+  }
+}
+
+.heading-quaternary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-quaternary {
+    font-size: 2.3rem;
   }
 }
 
@@ -179,6 +190,10 @@ body {
 
 .u-center-text {
   text-align: center;
+}
+
+.u-margin-bottom-big-2 {
+  margin-bottom: 14rem;
 }
 
 .u-margin-bottom-big {
@@ -217,6 +232,42 @@ body {
   margin-left: 8rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .u-margin-top-responsive {
+    margin-top: 8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .u-margin-top-responsive {
+    margin-top: 8rem;
+  }
+}
+
+.u-font-size {
+  font-size: 2rem;
+}
+
+.u-border-bottom {
+  border-bottom: solid #03354B 1px;
+  width: 80%;
+  padding-bottom: 2rem;
+}
+@media only screen and (max-width: 75em) {
+  .u-border-bottom {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .u-border-bottom {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .u-border-bottom {
+    width: 100%;
+  }
+}
+
 .section-about {
   background-color: #f7f7f7;
   padding: 15rem 0 10rem 0;
@@ -229,8 +280,12 @@ body {
 
 .section-features {
   padding: 15rem 0 25rem 0;
-  background-image: linear-gradient(to right bottom, rgba(6, 88, 117, 0.2), rgba(0, 18, 33, 0.2));
+  background-image: linear-gradient(to right bottom, rgba(6, 88, 117, 0.6), rgba(0, 18, 33, 0.6)), url(/leather-couch.5eb0bbf4.jpg);
   margin-top: 0rem;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
   transform: skewY(-7deg);
 }
 .section-features > * {
@@ -264,7 +319,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .method-alt__photo .img {
-    width: 80%;
+    width: 70%;
   }
 }
 .method-alt__text {
@@ -284,11 +339,16 @@ body {
 }
 .section-about-list ul {
   font-size: 1.5rem;
-  list-style-type: none;
+  list-style-type: inherit;
   margin-top: 1rem;
 }
-.section-about-list li {
-  text-align: center;
+@media only screen and (max-width: 56.25em) {
+  .section-about-list ul {
+    font-size: 2rem;
+  }
+}
+.section-about-list li:last-child {
+  margin-bottom: 8rem;
 }
 .section-about-list hr {
   width: 60%;
@@ -372,9 +432,8 @@ body {
   padding: 3rem;
   text-align: center;
   transition: transform 0.3s;
-  background: rgba(247, 247, 247, 0.7);
+  background: rgba(247, 247, 247, 0.8);
   box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10.5px);
   -webkit-backdrop-filter: blur(10.5px);
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -563,6 +622,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .contact-form__input {
     width: 100%;
+    font-size: 2rem;
   }
 }
 .contact-form__input:focus {
@@ -601,6 +661,11 @@ body {
   font-family: inherit;
   border: none;
 }
+@media only screen and (max-width: 56.25em) {
+  .contact-form__button {
+    font-size: 2rem;
+  }
+}
 .contact-form__button:hover {
   opacity: 0.8;
 }
@@ -619,16 +684,6 @@ body {
 .contact-text__paragraph {
   font-size: 1.6rem;
 }
-.contact-text__hr {
-  width: 60%;
-}
-@media only screen and (max-width: 75em) {
-  .contact-text__hr {
-    margin: auto;
-    margin-bottom: 1.5rem;
-  }
-}
-
 /*.contact{
 }
 
@@ -711,6 +766,9 @@ body {
     display: none;
   }
 }
+.popup__list-text li {
+  font-size: 1.6rem;
+}
 .popup__right {
   width: 66.6666667%;
   display: table-cell;
@@ -743,6 +801,11 @@ body {
   -webkit-hyphens: auto;
   hyphens: auto;
   text-align: left;
+}
+@media only screen and (max-width: 56.25em) {
+  .popup__text {
+    font-size: 1.6rem;
+  }
 }
 .popup:target {
   opacity: 1;
@@ -823,7 +886,7 @@ body {
     padding: 0 6rem;
   }
   .row p {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 .row::after {

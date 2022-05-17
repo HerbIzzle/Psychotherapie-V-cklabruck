@@ -40,6 +40,12 @@
     }
   }
 
+  &__list-text{
+    li{
+      font-size: $default-font-size;
+    }
+  }
+
   &__right {
     width: 66.6666667%;
     display: table-cell;
@@ -76,6 +82,10 @@
     -webkit-hyphens: auto;
     hyphens: auto;
     text-align: left;
+
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+    }
   }
 
   &:target {

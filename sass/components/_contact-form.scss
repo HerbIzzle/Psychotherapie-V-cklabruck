@@ -23,6 +23,7 @@
 
     @include respond(tab-port) {
       width: 100%;
+      font-size: 2rem;
     }
 
     &:focus {
@@ -68,6 +69,10 @@
     font-family: inherit;
     border: none;
 
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+
     &:hover {
       opacity: .8;
     }
@@ -88,6 +93,10 @@
 
   }
 
+  @include respond(phone) {
+    //border: blue solid 1px;
+  }
+
   &__paragraph {
 
     font-size: $default-font-size;
@@ -95,17 +104,9 @@
     &:not(last-chid) {
       // margin-bottom: 6rem;
     }
-  }
-
-  &__hr {
-    width: 60%;
-
-    @include respond(tab-land) {
-      margin: auto;
-      margin-bottom: 1.5rem;
-    }
 
   }
+
 }
 
 

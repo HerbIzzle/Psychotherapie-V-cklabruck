@@ -13,18 +13,19 @@
 }
 
 .section-features {
-  //background-color: $color-grey-light-1;
   padding: 15rem 0 25rem 0;
   background-image: linear-gradient(
                   to right bottom,
-                  rgba($color-primary-light, .2),
-                  rgba($color-primary-dark, .2));
+                  rgba($color-primary-light, .6),
+                  rgba($color-primary-dark, .6),
+  ), url(/img/leather-couch.jpg);
+
   margin-top: 0rem;
 
-  //background-attachment: fixed;
-  //background-size: cover;
-  //background-position: top;
-  //background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 
   //clip-path: polygon(0 20%, 100% 0 , 100% 80%, 0 100%);
 
@@ -71,7 +72,7 @@
       width: 35%;
 
       @include respond(tab-port) {
-        width: 80%;
+        width: 70%;
       }
 
     }
@@ -106,13 +107,21 @@
 
   ul {
     font-size: 1.5rem;
-    list-style-type: none;
+    list-style-type: inherit;
     margin-top: 1rem;
+
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
   }
 
   li {
-    text-align: center;
+    //text-align: center;
     //line-height: 3rem;
+    &:last-child {
+      margin-bottom: 8rem;
+    }
   }
 
   hr {
@@ -132,7 +141,7 @@
       box-shadow: 0 1.5rem 4rem rgb($color-black, .4);
 
       @include respond(tab-port) {
-       margin: auto;
+        margin: auto;
       }
 
       &:hover {

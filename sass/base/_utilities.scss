@@ -1,21 +1,74 @@
-.u-center-text{text-align:center ;}
+.u-center-text {
+  text-align: center;
+}
 
-.u-margin-bottom-big{margin-bottom: 12rem;}
+.u-margin-bottom-big-2 {
+  margin-bottom: 14rem;
+}
+.u-margin-bottom-big {
+  margin-bottom: 12rem;
+}
 
 
-.u-margin-bottom-normal-2{margin-bottom: 8em;}
+.u-margin-bottom-normal-2 {
+  margin-bottom: 8em;
+}
 
-.u-margin-bottom-normal{margin-bottom: 5em;}
+.u-margin-bottom-normal {
+  margin-bottom: 5em;
+}
 
-.u-margin-bottom-small-2{margin-bottom: 3.5rem;}
+.u-margin-bottom-small-2 {
+  margin-bottom: 3.5rem;
+}
 
-.u-margin-bottom-small{margin-bottom: 1.5rem;}
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
 
-.u-margin-top-small{margin-top: 4rem;}
+.u-margin-top-small {
+  margin-top: 4rem;
+}
 
-.u-margin-top-normal{margin-top: 6.5rem;}
+.u-margin-top-normal {
+  margin-top: 6.5rem;
+}
 
-.u-margin-top-big{margin-top: 9rem;}
+.u-margin-top-big {
+  margin-top: 9rem;
+}
 
-.u-margin-left{margin-left: 8rem;}
+.u-margin-left {
+  margin-left: 8rem;
+}
 
+.u-margin-top-responsive {
+  @include respond(tab-port) {
+    margin-top: 8rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 8rem;
+  }
+}
+
+.u-font-size{
+    font-size: 2rem;
+  }
+
+.u-border-bottom {
+  border-bottom: solid $color-primary 1px;
+  width: 80%;
+  padding-bottom: 2rem;
+
+  @include respond(tab-land) {
+    width: 90%;
+  }
+  @include respond(tab-port) {
+    width: 100%;
+  }
+  @include respond(phone) {
+    width: 100%;
+  }
+
+}
