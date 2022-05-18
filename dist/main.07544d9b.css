@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -281,7 +282,6 @@ body {
 .section-features {
   padding: 15rem 0 25rem 0;
   background-image: linear-gradient(to right bottom, rgba(6, 88, 117, 0.6), rgba(0, 18, 33, 0.6)), url(/leather-couch.5eb0bbf4.jpg);
-  margin-top: 0rem;
   background-attachment: fixed;
   background-size: cover;
   background-position: top;
@@ -339,20 +339,24 @@ body {
 }
 .section-about-list ul {
   font-size: 1.5rem;
-  list-style-type: inherit;
-  margin-top: 1rem;
+  list-style-type: "→";
+  list-style-position: outside;
 }
 @media only screen and (max-width: 56.25em) {
   .section-about-list ul {
     font-size: 2rem;
   }
 }
+.section-about-list li {
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
 .section-about-list li:last-child {
   margin-bottom: 8rem;
 }
-.section-about-list hr {
-  width: 60%;
-  margin: auto;
+.section-about-list li::marker {
+  color: #03354B;
+  font-size: 2.5rem;
 }
 .section-about-list .portrait__img {
   display: block;
@@ -394,32 +398,6 @@ body {
   transform: skewY(7deg);
 }
 
-/*.section-method {
-  background-color: $color-grey-light-1;
-  padding: 20rem 20rem;
-  margin-top: -10vh;
-
-  .method__text {
-    margin-top: 5vh;
-    color: black;
-  }
-
-
-  .method__photo {
-    display: flex;
-    justify-content: center;
-
-    img {
-      text-align: center;
-      margin-top: -15vh;
-      width: 50%;
-      height: 50%;
-      border-radius: 100%;
-      background-color: green;
-
-    }
-  }
-}*/
 .feature-box {
   /*background-color: rgba($color-button-white, .8);
   font-size: 1.5rem;
@@ -784,7 +762,8 @@ body {
   }
 }
 .popup__img {
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 75em) {
   .popup__img {
