@@ -36,15 +36,12 @@
     <a href="https://psychotherapie-voecklabruck.web.app"><strong>Project Link »</strong></a>
   </p>
 </div>
-<br><br>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 ![Product Name Screen Shot][product-screenshot]
 
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -64,7 +61,7 @@ Herbert Knaf - knaf.herbert@gmail.com
 
 Project Link: [https://psychotherapie-voecklabruck.web.app](https://psychotherapie-voecklabruck.web.app)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 
 
