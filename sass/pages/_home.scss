@@ -33,7 +33,7 @@
 
 }
 
-.section-method-alt {
+.section-method {
   background-color: $color-grey-light-1;
   margin-top: -10rem;
   padding: 15rem 0 15rem 0;
@@ -44,40 +44,41 @@
   & > * {
     transform: skewY(7deg);
   }
-}
 
-.method-alt {
 
-  background-color: $color-grey-light-1;
+  .method {
 
-  text-align: center;
-  display: block;
-  margin: auto;
-  width: 65%;
+    background-color: $color-grey-light-1;
 
-  &__photo {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 65%;
 
-    font-size: 1.5rem;
+    &__photo {
 
-    .img {
-      margin-top: -8rem;
-      border-radius: 100%;
-      width: 35%;
+      font-size: 1.5rem;
 
-      @include respond(tab-port) {
-        width: 70%;
+      .img {
+        margin-top: -8rem;
+        border-radius: 100%;
+        width: 35%;
+
+        @include respond(tab-port) {
+          width: 70%;
+        }
       }
     }
+
+    &__text {
+      color: black;
+      overflow-wrap: break-word;
+      padding-top: 4rem;
+      font-size: 2rem;
+    }
+
+
   }
-
-  &__text {
-    color: black;
-    overflow-wrap: break-word;
-    padding-top: 4rem;
-    font-size: 2rem;
-  }
-
-
 }
 
 .section-about-list {
@@ -99,27 +100,29 @@
 
   ul {
     font-size: 1.5rem;
-    list-style-type: "→" ;
+    list-style-type: "→";
     list-style-position: outside;
 
     @include respond(tab-port) {
       font-size: 2rem;
     }
   }
+
   li {
     //text-align: center;
     //line-height: 3rem;
     padding-left: 2rem;
     margin-top: 1rem;
+
     &:last-child {
       margin-bottom: 8rem;
     }
 
-    &::marker{
+    &::marker {
       color: $color-primary;
       font-size: 2.5rem;
     }
-    }
+  }
 
   .portrait {
 
@@ -161,6 +164,27 @@
 
     // margin-left: 5rem;
   }
+
+  .about-list__link{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: $color-grey-light-3 solid 1.5px;
+    //font-size: 4rem;
+
+
+    &:hover, &:active{
+      cursor: pointer;
+      color: $color-primary-light;
+    }
+
+    //&:active, &:visited {
+   //   text-decoration: none;
+   //   color: inherit;
+   // }
+
+  }
+
   .about-list__content {
     display: block;
     margin-left: 10rem;

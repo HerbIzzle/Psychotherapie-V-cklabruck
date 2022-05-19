@@ -117,6 +117,7 @@ body {
     letter-spacing: 0;
     font-size: 5rem;
     margin-top: 5rem;
+    hyphens: auto;
   }
 }
 .heading-primary--sub {
@@ -292,37 +293,36 @@ body {
   transform: skewY(7deg);
 }
 
-.section-method-alt {
+.section-method {
   background-color: #f7f7f7;
   margin-top: -10rem;
   padding: 15rem 0 15rem 0;
   transform: skewY(-7deg);
 }
-.section-method-alt > * {
+.section-method > * {
   transform: skewY(7deg);
 }
-
-.method-alt {
+.section-method .method {
   background-color: #f7f7f7;
   text-align: center;
   display: block;
   margin: auto;
   width: 65%;
 }
-.method-alt__photo {
+.section-method .method__photo {
   font-size: 1.5rem;
 }
-.method-alt__photo .img {
+.section-method .method__photo .img {
   margin-top: -8rem;
   border-radius: 100%;
   width: 35%;
 }
 @media only screen and (max-width: 56.25em) {
-  .method-alt__photo .img {
+  .section-method .method__photo .img {
     width: 70%;
   }
 }
-.method-alt__text {
+.section-method .method__text {
   color: black;
   overflow-wrap: break-word;
   padding-top: 4rem;
@@ -378,6 +378,16 @@ body {
   transform: translateX(-3px);
   transition: 0.5s ease;
 }
+.section-about-list .about-list__link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: #a69f9f solid 1.5px;
+}
+.section-about-list .about-list__link:hover, .section-about-list .about-list__link:active {
+  cursor: pointer;
+  color: #065875;
+}
 .section-about-list .about-list__content {
   display: block;
   margin-left: 10rem;
@@ -396,6 +406,44 @@ body {
 }
 .section-contact > * {
   transform: skewY(7deg);
+}
+
+.impressum {
+  background-color: #f7f7f7;
+  color: black;
+  padding: 6rem 5rem 18rem 5rem;
+}
+.impressum h5 {
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+.impressum h4 {
+  font-size: 3rem;
+}
+.impressum .datenschutzdiv, .impressum .webdesigndiv {
+  padding-top: 6rem;
+}
+.impressum .impressumDiv p:first-of-type {
+  padding-top: 2rem;
+}
+.impressum p {
+  font-size: 1.6rem;
+}
+.impressum ul {
+  font-size: 1.6rem;
+  list-style-position: inside;
+}
+.impressum a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+.impressum a:hover, .impressum a:active {
+  cursor: pointer;
+  color: #065875;
+}
+.impressum .webdesigndiv a:last-of-type {
+  border-bottom: #a69f9f solid 2px;
 }
 
 .feature-box {
@@ -646,6 +694,7 @@ body {
 }
 .contact-form__button:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .contact-text {
@@ -759,6 +808,8 @@ body {
     display: inline-block;
     position: relative;
     text-align: center;
+    height: 80vh;
+    overflow: auto;
   }
 }
 .popup__img {
@@ -842,8 +893,8 @@ body {
 .header__impressum {
   display: block;
   width: 100%;
-  height: 10rem;
-  background-color: #333;
+  height: 20vh;
+  background-color: #065875;
 }
 
 .row {
@@ -862,7 +913,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .row {
     max-width: 50rem;
-    padding: 0 6rem;
+    padding: 0 8rem;
   }
   .row p {
     font-size: 2rem;
@@ -1044,10 +1095,6 @@ body {
 .footer__logo-box {
   text-align: center;
   margin-bottom: 8rem;
-}
-.footer__logo {
-  width: 15rem;
-  height: auto;
 }
 .footer__navigation {
   border-top: 1px solid #777;

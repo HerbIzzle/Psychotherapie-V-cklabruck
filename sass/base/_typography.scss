@@ -26,10 +26,15 @@ body {
     font-size: 5rem;
     font-weight: 700;
 
+    @include respond(tab-land){
+
+    }
+
     @include respond(phone){
       letter-spacing: 0;
       font-size: 5rem;
       margin-top: 5rem;
+      hyphens: auto;
     }
 
     animation: moveInLeft 1s ease-out;
