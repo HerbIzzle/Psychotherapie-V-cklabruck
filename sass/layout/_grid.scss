@@ -12,12 +12,28 @@
   }
     @include respond(tab-port) {
       max-width: 50rem;
-      padding: 0 8rem;
+      padding: 0 6rem;
 
       p{
         font-size: 2rem;
       }
 
+      @include respond(phone){
+        max-width: 50rem;
+        padding: 0 6rem;
+
+        p{
+          font-size: 2rem;
+        }
+      }
+      @include respond(phone-s){
+        max-width: 50rem;
+        padding: 0 8rem;
+
+        p{
+          font-size: 2rem;
+        }
+      }
   }
 
 @include clearfix;
