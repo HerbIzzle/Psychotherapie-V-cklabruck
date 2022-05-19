@@ -41,9 +41,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://psychotherapie-voecklabruck.web.app)
+![Product Name Screen Shot][product-screenshot]
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -61,7 +60,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- CONTACT -->
 ## Contact
 
-Herbert Knaf - [@twitter_handle](https://twitter.com/twitter_handle) - knaf.herbert@gmail.com
+Herbert Knaf - knaf.herbert@gmail.com
 
 Project Link: [https://psychotherapie-voecklabruck.web.app](https://psychotherapie-voecklabruck.web.app)
 
@@ -84,4 +83,4 @@ Project Link: [https://psychotherapie-voecklabruck.web.app](https://psychotherap
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: img/screenshot.png
+[product-screenshot]: img/Screenshot.png
