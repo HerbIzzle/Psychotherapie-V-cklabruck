@@ -39,16 +39,12 @@ body {
     padding: 0;
   }
 }
-@media only screen and (max-width: 56.25em) {
-  body {
-    padding: 0;
-  }
+
+::selection {
+  background-color: #065875;
+  color: #fff;
 }
-@media only screen and (max-width: 37.5em) {
-  body {
-    padding: 0;
-  }
-}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;

@@ -38,15 +38,9 @@ body {
   @include respond(tab-land){
    padding: 0;
   }
+}
 
-  @include respond(tab-port){
-  padding: 0;
-  }
-
-  @include respond(phone){
-    padding: 0;
-  }
-
-  @include respond(big-desktop){
-  }
+::selection{
+  background-color: $color-primary-light;
+  color: $color-white;
 }
